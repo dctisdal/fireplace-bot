@@ -75,7 +75,7 @@ class YEET:
         return game
 
 
-    def getNextState(self, player, action, game_instance=self.game):
+    def getNextState(self, player, action, game_instance):
         """
         Input:
             player: current player (1 or -1)
@@ -102,7 +102,7 @@ class YEET:
             return next_state, -player
 
 
-    def getValidMoves(self, game_instance=self.game):
+    def getValidMoves(self, game_instance):
         """
         Input:
             game_instance: the game object (actual game or deepcopy for MCTS)
@@ -204,7 +204,7 @@ class YEET:
                 pass
 
 
-    def getGameEnded(self, game_instance=self.game):
+    def getGameEnded(self, game_instance):
         """
         Input:
             game_instance: the game object (actual game or deepcopy for MCTS)
