@@ -229,7 +229,7 @@ class YEET:
             return 0.0001
         return 0
 
-    def getState(self, game_instance=self.game):
+    def getState(self, game_instance):
         """
         Args:
             game_instance: the game object (actual game or deepcopy for MCTS)
